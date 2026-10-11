@@ -1,0 +1,22 @@
+CREATE TABLE `hostel_applications` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `form_no` varchar(50) DEFAULT NULL,
+  `reference_id` varchar(50) DEFAULT NULL,
+  `application_datetime` datetime DEFAULT NULL,
+  `roll_no` varchar(50) DEFAULT NULL,
+  `full_name` varchar(150) DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `course` varchar(100) DEFAULT NULL,
+  `year` varchar(20) DEFAULT NULL,
+  `mobile` varchar(20) DEFAULT NULL,
+  `email` varchar(150) DEFAULT NULL,
+  `address` text DEFAULT NULL,
+  `guardian_name` varchar(150) DEFAULT NULL,
+  `guardian_mobile` varchar(20) DEFAULT NULL,
+  `room_type` varchar(30) DEFAULT NULL,
+  `mess_plan` varchar(20) DEFAULT NULL,
+  `medical` text DEFAULT NULL,
+  `declaration` tinyint(1) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
